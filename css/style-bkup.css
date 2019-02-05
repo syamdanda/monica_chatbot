@@ -1,0 +1,78 @@
+*{padding:0px;margin:0px;}
+body{padding:0px;margin:0px; font-size: 14px;color: #333;font-family: 'Roboto', sans-serif;font-weight: 400;background:#5d8bc2 url(../images/bg.png) no-repeat right top ;text-align: center;background-size: cover}
+:focus{outline:none;}
+.cl{clear:both;}
+.Chat_bot_div{width: 895px;box-shadow:0px 0px 25px #000;-moz-box-shadow:0px 0px 25px #000;-webkit-box-shadow:0px 0px 25px #000;padding: 5px 0 2px 5px;background: #e5e4e4;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;margin: 50px auto;}
+.Chat_bot{width: 545px;float: left;position: relative;}
+.Chat_bot:after{position: absolute;content: '';display: block;bottom: 49%;left:-9px;width: 20px;height: 20px;
+-webkit-border-radius: 3px;border-radius: 3px;-webkit-transform: rotate(45deg);transform: rotate(45deg);
+z-index: 15;background: #e5e4e4;}
+.GIA_logo{float:left;}
+.close{float:right;padding: 10px 0 0 0;}
+.Gia_hd{background:#000;padding:10px;}
+.GIA_Chat{padding:20px 20px 20px 20px;}
+.GIA_Chat ul li{list-style:none;background: #ffffff;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;text-align: right;padding:10px 15px;display: inline;float: right;margin-bottom: 15px;font-weight:300;color: #000;position: relative;margin-right:65px;clear: both;}
+.GIA_Chat ul li:before{position:absolute;right:-50px;top:-1px;background: url(../images/bot-avatar.png) no-repeat center center;height:40px;width:50px;content: "";}
+.GIA_Chat ul li.GIA_Chat{background: #5d8bc2;color: #fff;clear: both;float: left !important;margin-left: 50px !important;margin-right:15px !important;text-align: left !important;}
+.GIA_Chat ul li.GIA_Chat:before{position:absolute;left:-50px;top:-1px;background: url(../images/gia-avatar.png) no-repeat center center;height:40px;width:50px;content: "";}
+.text_area{background:#fff;padding:15px;position: relative;border-radius: 0 0 3px 0;-moz-border-radius: 0 0 3px 0;-webkit-border-radius: 0 0 3px 0;}
+.text_area textarea{padding:12px 45px 0px 10px;font-size: 14px;font-family: 'Roboto', sans-serif;width:457px;color: #666666;resize:none;height: 57px;float: left;overflow:hidden;border:solid 1px #cccccc}
+.textarea:focus::-webkit-textarea-placeholder{color:#666666;}
+.textarea:focus:-ms-textarea-placeholder{color:#666666;}
+.GIA_Chat ul li img{float:right;border-radius:3px;    margin: 0 0 5px 5px;padding: 3px;}
+.voice{float:left;}
+.voice img{border-top: solid 1px #ccc;border-right: solid 1px #ccc;border-bottom: solid 1px #ccc;}
+
+.GIA_Chat ul li.GIA_Chat_loader{background:none !important;color: #fff;clear: both;float: left !important;margin-left: 50px !important;margin-right: 15px !important;text-align: left !important;}
+.GIA_Chat ul li.GIA_Chat_loader:before{background: url(../images/gia-avatar-load.png) no-repeat center center;left: -50px;}
+.GIA_Chat ul li.GIA_Chat_loader img{margin-top:-28px;background:none;border-radius: 3px;margin-left:-25px;height: 57px;}
+
+.avatar_Img{background:url(../images/gia-avatar-big.png) no-repeat center center;height: 77px;width: 77px;position: relative;z-index: 9;}
+.avatar_Img:hover{background:url(../images/gia-avatar-big-H1.png) no-repeat center center;}
+.Gia_avatar{position:relative;float: right;margin: 20px 15px 0 0;}
+.Gia_avatar img{border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%; padding: 1px;box-shadow:0px 0px 20px #999;-moz-box-shadow:0px 0px 20px #999;-webkit-box-shadow:0px 0px 20px #999;}
+.Gia_avatar .tooltiptext {visibility: hidden;width: 190px;top: 25px; right: 85px;background-color: #5ba101;color: #fff;text-align: center;border-radius: 6px;padding: 8px 0;position: absolute;z-index: 1;}
+.Gia_avatar .tooltiptext:after{position: absolute;content: '';display: block;bottom:11px;right: -4px;width: 10px;height: 10px;-webkit-border-radius: 3px;border-radius: 3px;-webkit-transform: rotate(-39deg);transform: rotate(-39deg);z-index: 15;background: #5a9e03;}
+.Gia_avatar:hover .tooltiptext {visibility: visible;}
+.Gia_avatar:after{content: '';display: inline-block;width: 12px;height: 12px;border-radius: 50%;background-image: linear-gradient(to bottom,#38dc79,#1ab744);position: absolute;right:-4px;top:20px;z-index: 50;}
+.GIA_Chat ul{height:462px  !important;}
+
+.Avatar{float:left;}
+.Avatar img{border-radius:5px 0 0 5px;-moz-border-radius:5px 0 0 5px;-webkit-border-radius:5px 0 0 5px;}
+
+@keyframes circle {
+from {transform: scale(0)}
+to {transform: scale(6)}
+}
+.circle {margin: 0 auto;width: 20px;height: 20px;border:1px solid #5ba101;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;position: absolute;top:30px;right:30px;}
+.one {animation: circle 4s infinite linear;}
+.two {animation: circle 3s infinite linear;}
+.three {animation: circle 2s infinite linear;}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.btnGreen {background-color: #4CAF50; /* Green */}
+.btnRed {background-color: #f44336;} /* Red */ 
+
+
+@media only screen and (min-device-width :100px) and (max-device-width :650px) {
+	
+.Chat_bot_div{width:87%;}
+.GIA_logo{width:85%;}
+.GIA_logo img{width:100%;}
+.GIA_Chat ul{height:100px !important;}
+.text_area textarea{width:76%;}
+.circle{top: 26px;right: 26px;width: 20px;height: 20px;}
+.avatar_Img{height:70px;background: url(../images/gia-avatar-big.png) no-repeat top center;width:70px;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;}
+.avatar_Img:hover{background: url(../images/gia-avatar-big-H1.png) no-repeat top center;}
+
+}
