@@ -1,0 +1,23 @@
+{
+  "name": "monica_chatbot",
+  "version": "1.0.0",
+  "description": "Web client for monica (Personal Assistant) <br/><br/>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syamdanda/monica_chatbot.git"
+  },
+  "author": "Syam Danda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/syamdanda/monica_chatbot/issues"
+  },
+  "homepage": "https://github.com/syamdanda/monica_chatbot#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

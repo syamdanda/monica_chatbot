@@ -16,6 +16,15 @@ var remoteServer = {
     port: 4000
 }
 
+var app_port;
+if (app.get('env') === 'development') {
+    // set app defaults for local
+    app_port = process.env.PORT || 6000;
+ } else {
+    //set app defaults for heroku
+    app_port = process.env.PORT;
+ }
+
 app.use(function(req, res, next){
     if (req.url.indexOf('ui') > -1) {
         if (req.file) {
@@ -208,7 +217,7 @@ function sendGetRequest(options, httpType, callback) {
     req.end();
 }
 
-var server = app.listen(4004, function () {
+var server = app.listen(app_port, function () {
    var host = server.address().address
    var port = server.address().port   
    console.log("Example app listening at http://%s:%s", host, port)
