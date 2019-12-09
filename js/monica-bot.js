@@ -18,12 +18,6 @@ function processText(e) {
     if (code == 13) { //Enter keycode
         speechText = document.getElementById('chat-input').value;
         $("#chatMsgs").append('<li><p align="right" class="fa fa-user-circle" style = "    display: block;"> : ' + speechText + '</p></li>');
-        /*ReqHandler reqHandler = new ReqHandler();
-        reqHandler.post({url: '/ui/query', data: {'queryString': speechText}}, function(response) {          
-          if (response.result) {
-            //swal("Success", "Your leave request submitted successfully", "success");
-          }
-         })*/;
         botVoiceResponse();
         $('#chat-input').val('');
         $("#chat-input").attr("placeholder", "");
