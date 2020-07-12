@@ -26,6 +26,15 @@ if (app.get('env') === 'development') {
     app_port = process.env.PORT;
  }
 
+var app_port;
+if (app.get('env') === 'development') {
+    // set app defaults for local
+    app_port = process.env.PORT || 6000;
+ } else {
+    //set app defaults for heroku
+    app_port = process.env.PORT;
+ }
+
 app.use(function(req, res, next){
     if (req.url.indexOf('ui') > -1) {
         if (req.file) {
