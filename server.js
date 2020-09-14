@@ -15,7 +15,7 @@ app.use("/",router);
 
 var remoteServer = {
     host: 'localhost',
-    port: 4000
+    port: 3000
 };
 
 if (app.get('env') === 'development') {
