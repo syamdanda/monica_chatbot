@@ -5,7 +5,7 @@ var router = express.Router();
 var RateLimit = require('express-rate-limit');
 var limiter = new RateLimit({
   windowMs: 1*60*1000, // 1 minute
-  max: 50
+  max: 500
 });
 
 var app_port;
