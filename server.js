@@ -2,10 +2,18 @@ var express = require('express');
 var app = express();
 var path = __dirname + '/';
 var router = express.Router();
+var RateLimit = require('express-rate-limit');
+var limiter = new RateLimit({
+  windowMs: 1*60*1000, // 1 minute
+  max: 50
+});
 
 var app_port;
 
 app.use(express.static(__dirname + '/'));
+
+// apply rate limiter to all requests
+app.use(limiter);
 
 router.get("/",function(req,res){
   res.sendFile(path + "index.html");
